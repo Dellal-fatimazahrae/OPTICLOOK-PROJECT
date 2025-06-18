@@ -224,6 +224,13 @@ $current_page = "dashboard";
             max-width: 1400px;
             margin: 0 auto;
             padding: 30px;
+
+            
+    flex: 1;
+    margin-left: 280px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+
         }
 
         /* Stats Grid */
@@ -661,6 +668,10 @@ $current_page = "dashboard";
     </style>
 </head>
 <body>
+
+
+<!-- Include Sidebar -->
+<?php include 'includes/sidebar.php'; ?>
 
 <!-- Header Admin -->
 <header class="admin-header">

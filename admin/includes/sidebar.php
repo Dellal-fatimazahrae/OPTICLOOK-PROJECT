@@ -9,9 +9,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <h2>👓 OpticLook</h2>
             <span>Administration</span>
         </div>
-        <button class="sidebar-toggle" onclick="toggleSidebar()">
-            <i class="fas fa-chevron-left"></i>
-        </button>
+
     </div>
 
     <div class="sidebar-content">
@@ -32,7 +30,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                        onclick="toggleSubmenu(this)">
                         <i class="fas fa-box"></i>
                         <span class="nav-text">Produits</span>
-                        <i class="fas fa-chevron-right submenu-arrow"></i>
                     </a>
                     <ul class="submenu <?php echo (strpos($current_page, 'produit') !== false) ? 'open' : ''; ?>">
                         <li><a href="products.php" class="submenu-link <?php echo ($current_page == 'products') ? 'active' : ''; ?>">
@@ -67,14 +64,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                             <i class="fas fa-list"></i> 
                             <span class="nav-text">Liste des clients</span>
                         </a></li>
-                        <li><a href="clients.php?action=add" class="submenu-link">
-                            <i class="fas fa-user-plus"></i> 
-                            <span class="nav-text">Ajouter client</span>
-                        </a></li>
-                        <li><a href="clients-stats.php" class="submenu-link">
-                            <i class="fas fa-chart-user"></i> 
-                            <span class="nav-text">Statistiques</span>
-                        </a></li>
                     </ul>
                 </li>
 
@@ -99,21 +88,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                             <i class="fas fa-calendar"></i> 
                             <span class="nav-text">Planning</span>
                         </a></li>
-                        <li><a href="appointments.php?status=0" class="submenu-link">
-                            <i class="fas fa-clock"></i> 
-                            <span class="nav-text">En attente</span>
-                            <?php if (isset($count) && $count > 0): ?>
-                                <span class="badge badge-warning"><?php echo $count; ?></span>
-                            <?php endif; ?>
-                        </a></li>
-                        <li><a href="appointments.php?status=1" class="submenu-link">
-                            <i class="fas fa-check-circle"></i> 
-                            <span class="nav-text">Confirmés</span>
-                        </a></li>
-                        <li><a href="appointments.php?status=2" class="submenu-link">
-                            <i class="fas fa-times-circle"></i> 
-                            <span class="nav-text">Annulés</span>
-                        </a></li>
                     </ul>
                 </li>
 
@@ -129,14 +103,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <li><a href="settings.php" class="submenu-link">
                             <i class="fas fa-sliders-h"></i> 
                             <span class="nav-text">Général</span>
-                        </a></li>
-                        <li><a href="users.php" class="submenu-link">
-                            <i class="fas fa-user-cog"></i> 
-                            <span class="nav-text">Utilisateurs</span>
-                        </a></li>
-                        <li><a href="backup.php" class="submenu-link">
-                            <i class="fas fa-database"></i> 
-                            <span class="nav-text">Sauvegarde</span>
                         </a></li>
                     </ul>
                 </li>
@@ -274,6 +240,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 .nav-item {
     margin-bottom: 5px;
+    width:16em;
 }
 
 .nav-link {
@@ -323,10 +290,15 @@ $current_page = basename($_SERVER['PHP_SELF']);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+         display: grid;
+    grid-template-columns: auto;
+
 }
 
 .submenu.open {
     max-height: 500px;
+        display: grid;
+    grid-template-columns: auto;
 
 }
 
