@@ -290,7 +290,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 .nav-link:hover,
 .nav-link.active {
-    background: linear-gradient(135deg, #00d70b, #53b259);
+    background: linear-gradient(135deg,rgb(24, 122, 29), #53b259);
     color: white;
     transform: translateX(5px);
 }

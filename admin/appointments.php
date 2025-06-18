@@ -173,7 +173,7 @@ try {
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             min-height: 100vh;
             display: flex;
         }
@@ -222,10 +222,10 @@ try {
             gap: 8px;
         }
 
-        .btn-primary { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
-        .btn-success { background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; }
-        .btn-warning { background: linear-gradient(135deg, #ffeaa7, #fdcb6e); color: #333; }
-        .btn-danger { background: linear-gradient(135deg, #fd79a8, #e84393); color: white; }
+        .btn-primary { background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76)); color: white; }
+        .btn-success { background: linear-gradient(135deg, #4ecdc4,rgb(24, 241, 198)); color: white; }
+        .btn-warning { background: linear-gradient(135deg, #ffeaa7,rgb(209, 219, 68)); color: #333; }
+        .btn-danger { background: linear-gradient(135deg,rgb(236, 17, 17),rgb(238, 13, 13)); color: white; }
         .btn-info { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; }
 
         .btn:hover {
@@ -824,9 +824,9 @@ try {
             <button onclick="exportAppointments()" class="btn btn-primary">
                 <i class="fas fa-download"></i> Exporter
             </button>
-            <button onclick="showCalendarView()" class="btn btn-primary">
+            <!-- <button onclick="showCalendarView()" class="btn btn-primary">
                 <i class="fas fa-calendar"></i> Vue calendrier
-            </button>
+            </button> -->
         </div>
     </div>
 </main>

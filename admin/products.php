@@ -200,7 +200,7 @@ try {
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             min-height: 100vh;
             display: flex;
         }
@@ -250,19 +250,20 @@ try {
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             color: white;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 8px 25px rgb(59, 158, 76);
         }
 
-        .btn-success { background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; }
-        .btn-warning { background: linear-gradient(135deg, #ffeaa7, #fdcb6e); color: #333; }
-        .btn-danger { background: linear-gradient(135deg, #fd79a8, #e84393); color: white; }
+        .btn-success { background: linear-gradient(135deg,rgb(124, 252, 188),rgb(15, 207, 111)); color: white; }
+        .btn-warning { background: linear-gradient(135deg,rgb(224, 255, 85),rgb(238, 255, 0)); color: #333; }
+        .btn-danger  { background:rgb(255, 0, 21); color:rgb(255, 0, 0); ; color: white; }
         .btn-info { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; }
+         
 
         .btn-sm {
             padding: 6px 12px;
@@ -344,9 +345,9 @@ try {
             font-weight: 600;
         }
 
-        .stock-high { background: #d4edda; color: #155724; }
-        .stock-medium { background: #fff3cd; color: #856404; }
-        .stock-low { background: #f8d7da; color: #721c24; }
+        .stock-high { background:rgb(129, 236, 154); color:rgb(99, 184, 43); }
+        .stock-medium { background: #fff3cd; color:rgb(205, 214, 82); }
+        .stock-low { background:rgb(245, 198, 201); color:rgb(233, 17, 38); }
 
         .form-grid {
             display: grid;
@@ -393,7 +394,7 @@ try {
 
         .pagination a:hover,
         .pagination .current {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             color: white;
             border-color: transparent;
         }

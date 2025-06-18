@@ -223,7 +223,7 @@ try {
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             min-height: 100vh;
             display: flex;
         }
@@ -272,11 +272,11 @@ try {
             gap: 8px;
         }
 
-        .btn-primary { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
-        .btn-success { background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; }
-        .btn-warning { background: linear-gradient(135deg, #ffeaa7, #fdcb6e); color: #333; }
-        .btn-danger { background: linear-gradient(135deg, #fd79a8, #e84393); color: white; }
-        .btn-info { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; }
+        .btn-primary { background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76)); color: white; }
+        .btn-success { background: white; color: rgb(48, 146, 86); }
+        .btn-warning { background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76)); color:white; }
+        .btn-danger { background: linear-gradient(135deg,rgb(253, 121, 121),rgb(255, 0, 0)); color: white; }
+        .btn-info { background: linear-gradient(135deg, #74b9ff,rgb(19, 169, 255)); color: white; }
 
         .btn:hover {
             transform: translateY(-2px);
@@ -286,6 +286,7 @@ try {
         .btn-sm {
             padding: 6px 12px;
             font-size: 12px;
+
         }
 
         .content-card {
@@ -315,9 +316,9 @@ try {
             border: 1px solid rgba(102, 126, 234, 0.2);
         }
 
-        .stat-item.warning { background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3); }
-        .stat-item.danger { background: rgba(220, 53, 69, 0.1); border-color: rgba(220, 53, 69, 0.3); }
-        .stat-item.success { background: rgba(40, 167, 69, 0.1); border-color: rgba(40, 167, 69, 0.3); }
+        .stat-item.warning { background: rgba(255, 193, 7, 0.1); border-color: rgb(238, 255, 7); }
+        .stat-item.danger { background: rgba(220, 53, 69, 0.1); border-color: rgba(255, 0, 25, 0.3); }
+        .stat-item.success { background: rgba(40, 167, 69, 0.1); border-color: rgba(27, 201, 68, 0.94); }
 
         .stat-number {
             font-size: 24px;
@@ -412,10 +413,10 @@ try {
             text-transform: uppercase;
         }
 
-        .stock-out { background: #f8d7da; color: #721c24; }
-        .stock-low { background: #fff3cd; color: #856404; }
-        .stock-medium { background: #d1ecf1; color: #0c5460; }
-        .stock-high { background: #d4edda; color: #155724; }
+        .stock-out { background: #f8d7da; color:rgb(255, 0, 0); }
+        .stock-low { background: #fff3cd; color:rgba(255, 231, 10, 0.9); }
+        .stock-medium { background: #d1ecf1; color:rgb(6, 218, 255); }
+        .stock-high { background: #d4edda; color:rgb(15, 216, 62); }
 
         .stock-input {
             width: 80px;
@@ -478,7 +479,7 @@ try {
 
         .pagination a:hover,
         .pagination .current {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             color: white;
             border-color: transparent;
         }
@@ -833,6 +834,7 @@ try {
             
             <div style="margin-bottom: 20px;">
                 <label><strong>Produit:</strong></label>
+                
                 <p id="modalProductName" style="color: #666;"></p>
             </div>
             

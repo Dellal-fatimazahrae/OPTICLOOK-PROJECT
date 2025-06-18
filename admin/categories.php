@@ -160,7 +160,7 @@ switch ($action) {
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             min-height: 100vh;
             display: flex;
         }
@@ -209,10 +209,10 @@ switch ($action) {
             gap: 8px;
         }
 
-        .btn-primary { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
+        .btn-primary { background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76)); color: white; }
         .btn-success { background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; }
         .btn-warning { background: linear-gradient(135deg, #ffeaa7, #fdcb6e); color: #333; }
-        .btn-danger { background: linear-gradient(135deg, #fd79a8, #e84393); color: white; }
+        .btn-danger { background: linear-gradient(135deg,rgb(243, 10, 10),rgb(243, 5, 5)); color: white; }
         .btn-info { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; }
 
         .btn:hover {
@@ -295,7 +295,7 @@ switch ($action) {
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76)));
         }
 
         .category-header {
@@ -318,7 +318,7 @@ switch ($action) {
             width: 40px;
             height: 40px;
             border-radius: 10px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             display: flex;
             align-items: center;
             justify-content: center;

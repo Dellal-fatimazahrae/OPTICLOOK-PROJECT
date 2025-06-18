@@ -207,7 +207,7 @@ try {
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             min-height: 100vh;
             display: flex;
         }
@@ -260,8 +260,11 @@ try {
         }
 
         .settings-nav {
-            list-style: none;
-        }
+    list-style: none;
+    display: grid
+;
+    grid-template-columns: auto;
+}
 
         .settings-nav-item {
             margin-bottom: 5px;
@@ -280,7 +283,7 @@ try {
 
         .settings-nav-link:hover,
         .settings-nav-link.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76));
             color: white;
             transform: translateX(5px);
         }
@@ -388,11 +391,11 @@ try {
             gap: 8px;
         }
 
-        .btn-primary { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
-        .btn-success { background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; }
-        .btn-warning { background: linear-gradient(135deg, #ffeaa7, #fdcb6e); color: #333; }
-        .btn-danger { background: linear-gradient(135deg, #fd79a8, #e84393); color: white; }
-        .btn-info { background: linear-gradient(135deg, #74b9ff, #0984e3); color: white; }
+        .btn-primary { background: linear-gradient(135deg,rgb(48, 146, 86),rgb(59, 158, 76)); color: white; }
+        .btn-success { background: linear-gradient(135deg,rgb(124, 252, 188),rgb(15, 207, 111)); color: white; }
+        .btn-warning { background: linear-gradient(135deg,rgb(224, 255, 85),rgb(238, 255, 0)); color: #333; }
+        .btn-danger { background: linear-gradient(135deg,rgb(243, 10, 10),rgb(243, 5, 5)); color: white; }
+        .btn-info { background: linear-gradient(135deg,rgb(116, 185, 255),rgb(9, 132, 227)); color: white; }
 
         .btn:hover {
             transform: translateY(-2px);
