@@ -1,0 +1,452 @@
+/* auth.css - Styles pour les pages de connexion et inscription */
+
+.auth-section {
+    min-height: 80vh;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.auth-form-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.auth-form-container h2 {
+    color: rgba(5, 92, 0, 1);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fafbfc;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: rgba(5, 92, 0, 1);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(5, 92, 0, 0.1);
+}
+
+.form-group small {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.checkbox-group a {
+    color: rgba(5, 92, 0, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, rgba(5, 92, 0, 1) 0%, #4a7c59 100%);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(5, 92, 0, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e5e9;
+}
+
+.auth-links p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.auth-links a {
+    color: rgba(5, 92, 0, 1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section image */
+.auth-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(5, 92, 0, 0.1) 0%, rgba(5, 92, 0, 0.05) 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.auth-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.auth-text h3 {
+    color: rgba(5, 92, 0, 1);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.auth-text p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.benefits-list li {
+    color: #333;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Messages d'erreur et de succès */
+.error-message {
+    background-color: #fee;
+    color: #c33;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #c33;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.success-message {
+    background-color: #efe;
+    color: #363;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #363;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* États des champs de validation */
+.form-group input:invalid {
+    border-color: #e74c3c;
+}
+
+.form-group input:valid {
+    border-color: #27ae60;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .auth-form-container {
+        padding: 2rem;
+        order: 2;
+    }
+    
+    .auth-image {
+        order: 1;
+    }
+    
+    .image-placeholder {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-section {
+        padding: 1rem 0;
+    }
+    
+    .auth-form-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .auth-form-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-submit {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    .checkbox-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+        align-self: flex-start;
+    }
+}
+
+/* Animation des éléments */
+.auth-form-container {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.auth-image {
+    animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Styles pour les champs requis */
+.form-group label::after {
+    content: "";
+}
+
+.form-group label[for="nom_complet"]::after,
+.form-group label[for="email"]::after,
+.form-group label[for="mot_de_passe"]::after,
+.form-group label[for="confirmer_mot_de_passe"]::after {
+    content: " *";
+    color: #e74c3c;
+}
+
+/* Amélioration de l'accessibilité */
+.form-group input:focus-visible,
+.form-group select:focus-visible {
+    outline: 2px solid rgba(5, 92, 0, 1);
+    outline-offset: 2px;
+}
+
+/* Style pour le loader/spinner pendant la soumission */
+.btn-submit.loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-submit.loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Style pour les tooltips/info-bulles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.85rem;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Style pour les badges de sécurité du mot de passe */
+.password-strength {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.strength-indicator {
+    height: 4px;
+    flex: 1;
+    background-color: #e1e5e9;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.strength-indicator.weak {
+    background-color: #e74c3c;
+}
+
+.strength-indicator.medium {
+    background-color: #f39c12;
+}
+
+.strength-indicator.strong {
+    background-color: #27ae60;
+}
+
+.password-requirements {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.password-requirements ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.password-requirements li {
+    margin: 0.2rem 0;
+    transition: color 0.3s ease;
+}
+
+.password-requirements li.valid {
+    color: #27ae60;
+}
+
+.password-requirements li.invalid {
+    color: #e74c3c;
+}
